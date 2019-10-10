@@ -60,9 +60,9 @@ open class ProcessQueue {
         runningFlag = true
         let closure = self.queue.removeFirst()
         closure()
-        delaySec(delay, queue:target) {
-            self.runningFlag = false
-            self.run()
+        delaySec(delay, queue:target) { [weak self] in
+            self?.runningFlag = false
+            self?.run()
         }
     }
     open func setDelayWithDuration(_ duration:Double) {

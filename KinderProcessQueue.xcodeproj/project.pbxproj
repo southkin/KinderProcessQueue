@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F3967E31DABAAEE0029A300 /* KinderProcessQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F3967E11DABAAEE0029A300 /* KinderProcessQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F3967EA1DABAB000029A300 /* ProcessQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3967E91DABAB000029A300 /* ProcessQueue.swift */; };
+		3FD1D444234EB4FA00607C10 /* KinderProcessQueue.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3FD1D443234EB4F900607C10 /* KinderProcessQueue.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		3F3967E11DABAAEE0029A300 /* KinderProcessQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KinderProcessQueue.h; sourceTree = "<group>"; };
 		3F3967E21DABAAEE0029A300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F3967E91DABAB000029A300 /* ProcessQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessQueue.swift; sourceTree = "<group>"; };
+		3FD1D443234EB4F900607C10 /* KinderProcessQueue.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KinderProcessQueue.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 		3F3967D41DABAAEE0029A300 = {
 			isa = PBXGroup;
 			children = (
+				3FD1D443234EB4F900607C10 /* KinderProcessQueue.podspec */,
 				3F3967E01DABAAEE0029A300 /* KinderProcessQueue */,
 				3F3967DF1DABAAEE0029A300 /* Products */,
 			);
@@ -126,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD1D444234EB4FA00607C10 /* KinderProcessQueue.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
