@@ -69,4 +69,30 @@ open class ProcessQueue {
         let cnt = queue.count
         self.delay = duration/Double(cnt)
     }
+    var step:Int = 0
+    func loopRun() {
+        let closure = self.queue[step]
+        closure()
+        delaySec(delay) { [weak self] in
+            guard let self = self else {
+                return
+            }
+            self.step += 1
+            if self.queue.count <= self.step {
+                self.step = 0
+            }
+            self.loopRun()
+        }
+    }
+    open func loop() {
+        guard queue.count != 0 else {
+            return
+        }
+        guard !runningFlag else {
+            return
+        }
+        runningFlag = true
+        step = 0
+        loopRun()
+    }
 }

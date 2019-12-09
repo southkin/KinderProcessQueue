@@ -5,6 +5,8 @@ Pod::Spec.new do |spec|
   spec.summary      = "ProcessQueue."
   spec.description  = <<-DESC
   ProcessQueue
+  프로세스 스케쥴링
+  순차실행, 반복실행
                    DESC
   spec.homepage     = "https://github.com/southkin/KinderProcessQueue"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
